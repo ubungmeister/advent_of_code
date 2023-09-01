@@ -15,12 +15,12 @@ console.log(inputs.length, 'inputs')
 
 let counter = 0 
 
-  for (let i = 0; i < inputs.length; i++) {
+ for (let i = 0; i < inputs.length; i++) {
     for (let j = 0; j < inputs[i].length; j++) {
 
       let point = inputs[i][j];
 
-      let isLower = true; // Assume it's a lower point
+      let isLower = true; 
 
       // vertically up
       if (i - 1 >= 0 && inputs[i - 1][j] < point) {
@@ -39,7 +39,6 @@ let counter = 0
         isLower = false;
       }
 
-      // If no adjacent point is higher, increment the counter
       if (isLower) {
         counter = counter + Number(point) + 1;
         // console.log('lower point:', point);
