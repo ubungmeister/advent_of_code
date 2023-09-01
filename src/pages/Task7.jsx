@@ -12,15 +12,17 @@ const Task7 = () => {
     //  then find the lowest cost
     const arrOfFuelCosts = []
     for (let i=0; i<arr.length; i++){
-        console.log(arr[i] )
+        // first count fuel cost for each position
         let fuel = 0
+
         for (let j=0; j<arr.length; j++){
             fuel = fuel + Math.abs(arr[i] - arr[j])
         }
         arrOfFuelCosts.push({position: i,fuelCost: fuel})
     }
-    console.log(arrOfFuelCosts, 'arrOfFuelCosts')
 
+    // find the lowest fuel cost
+    
     const lowestFuelCost = arrOfFuelCosts.reduce((acc, el) => {
         if(el.fuelCost < acc.fuelCost){
             return el}

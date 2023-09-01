@@ -12,6 +12,7 @@ const MainPage = () => {
             <Link to="Task6" >Task #6</Link>
             <Link to="Task7" >Task #7</Link>
             <Link to="Task9" >Task #9</Link>
+            <Link to="Task14" >Task #14</Link>
             </div>
           
         </div>
