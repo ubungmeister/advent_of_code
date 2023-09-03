@@ -1009,21 +1009,28 @@ const Task3 = () => {
 
 const row = input.split('\n').map(el => (el))
 
+console.log(row, 'row')
  let newArr = []
+
  const length = row[0].length
+
  let mostCommon = ''
  let leastCommon = ''
- 
+
+ // first create empty arrays of arrays
  for(let i=0; i< length; i++){
     newArr.push([])
  }
 
+// push elements that are verically aligned into the new array 
+// take i,j element like:1,1 // 2,1 // 3,1 etc. and push into array i
  for(let i=0; i< length; i++){
     for(let j=0; j< row.length; j++){
         newArr[i].push(row[j][i])
     }
   }
 
+  //count 0 and 1 in each array and push the most common and least common into the string
   for(let i=0; i< length; i++){
     let zero = 0
     let one = 0
@@ -1040,6 +1047,7 @@ const row = input.split('\n').map(el => (el))
 
   }
 
+  // convert binary to decimal
   const decimalMost = parseInt(mostCommon, 2);
   const decimalLeast = parseInt(leastCommon, 2);
 
