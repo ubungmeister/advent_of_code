@@ -33,7 +33,7 @@ const Task7 = () => {
 
     return (
         <div>
-            
+            <h1>Lowest fuel cost posititon: {lowestFuelCost.position} with fuel cost: {lowestFuelCost.fuelCost}</h1>
         </div>
     );
 };
