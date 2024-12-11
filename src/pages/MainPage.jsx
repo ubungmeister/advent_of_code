@@ -23,6 +23,8 @@ const MainPage = () => {
             <h2>Advent of Code 2024</h2>
             <div style={{ display: "flex", flexDirection: "column" }}>
                 <Link to="2024_1">Task #1</Link>
+                <Link to="2024_2">Task #2</Link>
+
              </div>
         </div>
     );
